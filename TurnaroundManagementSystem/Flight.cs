@@ -12,8 +12,8 @@ namespace TurnaroundManagementSystem
         private int _passengerCount;
         public string FlightNumber { get; set; }
         public string Destination { get; set; }
-        public DateTime ArrivalTime { get; set; }
-        public DateTime DepartureTime { get; set; }
+        public DateTime? ArrivalTime { get; set; }
+        public DateTime? DepartureTime { get; set; }
         public int PassengerCount
         {
             get
@@ -21,7 +21,10 @@ namespace TurnaroundManagementSystem
             set
             {
                 if (value < 0)
+                {
                     _passengerCount = 0;
+                    Console.WriteLine("Yolcu sayısı negatif olamaz!");
+                }
                 else
                 {
                     _passengerCount = value;
@@ -38,6 +41,7 @@ namespace TurnaroundManagementSystem
         {
             if (passengerCount > aircraftPassengerCount)
             {
+                Console.WriteLine("Uçak kapasitesi aşıldı!!");
                 return false;
             }
             else

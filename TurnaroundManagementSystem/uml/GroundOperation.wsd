@@ -1,0 +1,14 @@
+@startuml 
+title GroundOperation
+class GroundOperation
+{
+    + OperationName:string
+    + EstimatedMinutes:int
+    + IsCompleted:bool
+    +ResponsibleEmployee:Employee
+    + GroundOperation()
+    + GroundOperation(operationName:string)
+    + GroundOperation(operationName:string,estimatedMinutes:int)
+    + Complete()
+}
+@enduml

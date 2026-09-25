@@ -1,0 +1,10 @@
+@startuml 
+title Turnaround
+class Turnaround
+{
+    + Flight:Flight
+    + Gate:Gate 
+    +OperationCount:int 
+    + GroundOperations:GroundOperation[]
+}
+@enduml

@@ -1,0 +1,10 @@
+@startuml Employee
+title Employee
+class Employee
+{
+    + EmployeeId:int
+    + Name:string 
+    + Department:string
+    + IsAvailable:bool
+}
+@enduml

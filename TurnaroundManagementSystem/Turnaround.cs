@@ -10,6 +10,7 @@ namespace TurnaroundManagementSystem
     {
         public Flight Flight { get; set; }
         public Gate Gate { get; set; }
+        public int OperationCount { get; set; }
         public GroundOperation[] GroundOperations { get; set; }
     }
 }

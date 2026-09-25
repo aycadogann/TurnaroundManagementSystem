@@ -12,21 +12,26 @@ namespace TurnaroundManagementSystem
         {
 
         }
-        public GroundOperation(string _operationName)
+        public GroundOperation(string operationName)
         {
-            OperationName = _operationName;
+            OperationName = operationName;
         }
-        public GroundOperation(string _operationName, byte _estimatedMinutes)
+        public GroundOperation(string operationName, int estimatedMinutes)
         {
-            OperationName = _operationName;
-            EstimatedMinutes = _estimatedMinutes;
+            OperationName = operationName;
+            EstimatedMinutes = estimatedMinutes;
         }
 
         public string OperationName { get; set; }
-        public byte EstimatedMinutes { get; set; }
+        public int EstimatedMinutes { get; set; }
         public bool IsCompleted { get; set; }
-        public string ResponsibleEmployee { get; set; }
+        public Employee? ResponsibleEmployee { get; set; }
 
 
+        //operasyonun kendi davranışı üzerinden tamamlanmasını düşün.
+        public void Complete()
+        {
+
+        }
     }
 }

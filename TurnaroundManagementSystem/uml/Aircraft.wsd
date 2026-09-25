@@ -1,0 +1,19 @@
+@startuml
+title Aircraft
+class Aircraft
+{
+    - _passengerCapacity:int
+    - _fuelCapacity:int
+    - _currentFuel:int
+    + TailNumber:string
+    + Model: string
+    + PassengerCapacity:int
+    + FuelCapacity:int
+    + CurrentCapacity:int
+    + Aircraft()
+    + Aircraft(tailNumber:int, model:int,fuelCapacity:int)
+    + Aircraft(tailNumber:int, model:int,fuelCapacity:int,passengerCapacity:int)
+    + SetFuel(fuelAmount:int)
+    + AddFuel(fuel:int)
+}
+@enduml
